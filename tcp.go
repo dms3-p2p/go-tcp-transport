@@ -4,14 +4,15 @@ import (
 	"context"
 	"time"
 
-	logging "github.com/ipfs/go-log"
-	peer "github.com/libp2p/go-libp2p-peer"
-	tpt "github.com/libp2p/go-libp2p-transport"
-	tptu "github.com/libp2p/go-libp2p-transport-upgrader"
-	rtpt "github.com/libp2p/go-reuseport-transport"
-	ma "github.com/multiformats/go-multiaddr"
-	manet "github.com/multiformats/go-multiaddr-net"
-	mafmt "github.com/whyrusleeping/mafmt"
+	logging "github.com/dms3-fs/go-log"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	tpt "github.com/dms3-p2p/go-p2p-transport"
+	tptu "github.com/dms3-p2p/go-p2p-transport-upgrader"
+	rtpt "github.com/dms3-p2p/go-reuseport-transport"
+	ma "github.com/dms3-mft/go-multiaddr"
+	manet "github.com/dms3-mft/go-multiaddr-net"
+//	mafmt "github.com/whyrusleeping/mafmt" // imports from multiformats, use ours
+	mafmt "github.com/dms3-why/mafmt"
 )
 
 // DefaultConnectTimeout is the (default) maximum amount of time the TCP
